@@ -1,5 +1,9 @@
 # Getting Started
 
+This was a given example that teacher share with us and was using springboot, the idea of this service is expose a get http method that is able to return something after some given query parameters.
+
+The idea is also have an idea of how sping works and what could be done with it, how to separate Bondary context, controller and entity, in orde to have business login complete separate of exposed API
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
