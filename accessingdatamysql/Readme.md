@@ -38,6 +38,6 @@ docker run --name mysql -e MYSQL_ROOT_PASSWORD=javeriana123 -p=3306:3306 -d mysq
 ```
 ### Spring Annotations and error handling
 
-* [Spring annotations](New Spring MVC Request Annotations)
+* [Spring annotations](https://www.javaguides.net/2018/11/spring-getmapping-postmapping-putmapping-deletemapping-patchmapping.html)
 * [Error Handling](https://www.baeldung.com/exception-handling-for-rest-with-spring)
 
