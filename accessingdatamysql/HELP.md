@@ -19,16 +19,25 @@ The following guides illustrate how to use some features concretely:
 
 ## Used guide by Gio to do this was:
 
+### Spring guide
+
 The example was follow from this guide:
 * [CRUD MYSQL with Spring boot](https://spring.io/guides/gs/accessing-data-mysql/) 
 
-## MYSQL with docker
+### MYSQL and Docker 
 
-Reference: [Docker Hub](https://hub.docker.com/_/mysql?tab=description)
+Docker image:
 
-The executed commands were
+* Reference: [Docker Hub](https://hub.docker.com/_/mysql?tab=description)
+
+The executed commands for docker were
 
 ```
 docker pull mysql:8 
 docker run --name mysql -e MYSQL_ROOT_PASSWORD=javeriana123 -p=3306:3306 -d mysql:8 
 ```
+### Spring Annotations and error handling
+
+* [Spring annotations](New Spring MVC Request Annotations)
+* [Error Handling](https://www.baeldung.com/exception-handling-for-rest-with-spring)
+
