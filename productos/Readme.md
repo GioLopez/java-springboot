@@ -12,6 +12,8 @@ docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=javeriana123 -d pos
 Log in container
 docker exec -it -u 0 postgres bash
 
+create database product;
+GRANT ALL PRIVILEGES ON DATABASE product TO postgres;
 
 spring.jpa.database=POSTGRESQL
 spring.datasource.platform=postgres
@@ -24,8 +26,6 @@ spring.jpa.hibernate.ddl-auto=create
 spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
 
 
-CREATE USER product;
-GRANT ALL PRIVILEGES ON DATABASE product TO postgres;
 
 # Documentation
 
