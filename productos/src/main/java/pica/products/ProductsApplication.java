@@ -1,13 +1,13 @@
-package com.toures.balon.productos;
+package pica.products;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProductosApplication {
+public class ProductsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProductosApplication.class, args);
+		SpringApplication.run(ProductsApplication.class, args);
 	}
 
 }

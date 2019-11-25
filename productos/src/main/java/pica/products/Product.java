@@ -1,15 +1,17 @@
-package com.toures.balon.productos;
+package pica.products;
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name="producto")
-public class ProductDetail {
+@Table(name="products")
+public class Product {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
 
+    // #### Colocar indices a esta caga
+//    @Column(unique = true, nullable = false, updatable=true)
     private String codigo;
 
     private String nombre;
@@ -25,6 +27,12 @@ public class ProductDetail {
     private Date fecha_llegada;
 
     private Date fecha_salida;
+
+    private Date fecha_inicio_campana;
+
+    private Date fecha_fin_campana;
+
+    private boolean is_campain = false;
 
     private Float precio;
 
@@ -98,5 +106,29 @@ public class ProductDetail {
 
     public void setPrecio(Float precio) {
         this.precio = precio;
+    }
+
+    public Date getFecha_inicio_campana() {
+        return fecha_inicio_campana;
+    }
+
+    public void setFecha_inicio_campana(Date fecha_inicio_campana) {
+        this.fecha_inicio_campana = fecha_inicio_campana;
+    }
+
+    public Date getFecha_fin_campana() {
+        return fecha_fin_campana;
+    }
+
+    public void setFecha_fin_campana(Date fecha_fin_campana) {
+        this.fecha_fin_campana = fecha_fin_campana;
+    }
+
+    public boolean isIs_campain() {
+        return is_campain;
+    }
+
+    public void setIs_campain(boolean is_campain) {
+        this.is_campain = is_campain;
     }
 }
