@@ -91,4 +91,14 @@ public class ProductEndpoint {
         return ResponseEntity.ok().body(saveInDB(theProduct));
     }
 
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity deleteProduct(@PathVariable Long id){
+        try{
+            productRepository.deleteById(id);
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body("Error deleting id: " + id);
+        }
+        return ResponseEntity.ok().body("Product Deleted!");
+    }
+
 }
